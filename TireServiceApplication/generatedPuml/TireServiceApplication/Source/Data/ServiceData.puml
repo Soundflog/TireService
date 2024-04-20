@@ -1,0 +1,10 @@
+@startuml
+class ServiceData {
+    - <<const>> GetAllServicesUrl : string = "getAllByBranch"
+    - <<const>> ServicesUrl : string = "Service"
+    + {static} <<async>> GetServices() : Task<List<Service>?>
+    + {static} <<async>> AddService(service:Service) : Task<Service?>
+    + {static} <<async>> UpdateService(service:Service) : Task<Service?>
+    + {static} <<async>> DeleteService(id:string) : Task<bool>
+}
+@enduml

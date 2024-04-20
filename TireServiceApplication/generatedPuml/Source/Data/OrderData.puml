@@ -1,0 +1,20 @@
+@startuml
+class OrderData {
+    - <<const>> GetAllOrdersUrl : string = "getAllByBranch"
+    - <<const>> ChangeStatusUrl : string = "changeStatus"
+    - <<const>> OrdersUrl : string = "Order"
+    - <<const>> GetReportOrderUrl : string = "getReportOrder"
+    - <<const>> GetAllReportOrderUrl : string = "getReportAllOrders"
+    - <<const>> GetReportPersonalUrl : string = "getReportPersonal"
+    - <<const>> GetAllReportPersonalUrl : string = "getReportAllPersonal"
+    + {static} <<async>> GetOrders() : Task<List<Order>?>
+    + {static} <<async>> AddOrder(order:Order) : Task<Order?>
+    + {static} <<async>> UpdateOrder(order:Order) : Task<Order?>
+    + {static} <<async>> DeleteOrder(id:string) : Task<bool>
+    + {static} <<async>> ChangeStatus(id:string, status:string) : Task<bool>
+    + {static} <<async>> GetOrderReport(email:string, startData:string, endData:string) : Task<Response>
+    + {static} <<async>> GetPersonalReport(email:string, startData:string, endData:string) : Task<Response>
+    + {static} <<async>> GetAllOrderReport(email:string, startData:string, endData:string) : Task<Response>
+    + {static} <<async>> GetAllPersonalReport(email:string, startData:string, endData:string) : Task<Response>
+}
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class UserToken {
+    + access_token : string <<get>> <<set>>
+    + username : string <<get>> <<set>>
+}
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+class OrderStatusModel {
+    + {static} OrderStatusByKey(key:string) : OrderStatus
+}
+class "List`1"<T> {
+}
+OrderStatusModel o-> "OrderStatuses<OrderStatus>" "List`1"
+@enduml

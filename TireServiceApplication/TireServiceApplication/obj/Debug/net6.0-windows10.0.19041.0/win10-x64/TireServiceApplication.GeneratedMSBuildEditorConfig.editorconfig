@@ -1,0 +1,185 @@
+is_global = true
+build_property.TargetFramework = net6.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TireServiceApplication
+build_property.ProjectDir = E:\Projects\Project-234\TireServiceApplication\TireServiceApplication\
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Branches/AddBranchPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Branches.AddBranchPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Branches\AddBranchPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Branches\AddBranchPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Branches/BranchesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Branches.BranchesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Branches\BranchesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Branches\BranchesPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Branches/SettingBranchPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Branches.SettingBranchPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Branches\SettingBranchPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Branches\SettingBranchPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Clients/AddClientPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Clients.AddClientPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Clients\AddClientPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Clients\AddClientPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Clients/ClientsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Clients.ClientsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Clients\ClientsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Clients\ClientsPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Clients/SettingClientPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Clients.SettingClientPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Clients\SettingClientPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Clients\SettingClientPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Equipments/AddEquipmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Equipments.AddEquipmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Equipments\AddEquipmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Equipments\AddEquipmentPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Equipments/EquipmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Equipments.EquipmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Equipments\EquipmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Equipments\EquipmentPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Equipments/SettingEquipmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Equipments.SettingEquipmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Equipments\SettingEquipmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Equipments\SettingEquipmentPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Orders/AddOrderPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Orders.AddOrderPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Orders\AddOrderPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Orders\AddOrderPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Orders/OrdersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Orders.OrdersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Orders\OrdersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Orders\OrdersPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Orders/ViewOrderPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Orders.ViewOrderPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Orders\ViewOrderPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Orders\ViewOrderPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Others/AuthenticationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Others.AuthenticationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Others\AuthenticationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Others\AuthenticationPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Others/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Others.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Others\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Others\MainPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Others/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Others.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Others\SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Others\SettingsPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Others/UrlSettingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Others.UrlSettingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Others\UrlSettingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Others\UrlSettingPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Reports/ReportsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Reports.ReportsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Reports\ReportsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Reports\ReportsPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Services/AddServicePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Services.AddServicePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Services\AddServicePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Services\AddServicePage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Services/ServicesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Services.ServicesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Services\ServicesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Services\ServicesPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Services/SettingServicePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Services.SettingServicePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Services\SettingServicePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Services\SettingServicePage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Users/AddUserPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Users.AddUserPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Users\AddUserPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Users\AddUserPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Users/SettingUserPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Users.SettingUserPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Users\SettingUserPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Users\SettingUserPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Users/UsersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Users.UsersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Users\UsersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Users\UsersPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Workers/AddWorkerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Workers.AddWorkerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Workers\AddWorkerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Workers\AddWorkerPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Workers/SettingWorkerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Workers.SettingWorkerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Workers\SettingWorkerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Workers\SettingWorkerPage.xaml
+
+[E:/Projects/Project-234/TireServiceApplication/TireServiceApplication/Source/Pages/Workers/WorkersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TireServiceApplication.Source.Pages.Workers.WorkersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Workers\WorkersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Workers\WorkersPage.xaml

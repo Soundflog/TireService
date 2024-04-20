@@ -1,0 +1,14 @@
+@startuml
+class Equipment {
+    + Id : string? <<get>> <<set>>
+    + Deleted : bool? <<get>> <<set>>
+    + Title : string? <<get>> <<set>>
+    + Cost : double? <<get>> <<set>>
+    + PurchaseDate : DateTime? <<get>> <<set>>
+    + BuildDate : DateTime? <<get>> <<set>>
+    + GuaranteeDate : DateTime? <<get>> <<set>>
+    + UsefulLifeDate : int? <<get>> <<set>>
+    + BranchId : Branch? <<get>> <<set>>
+    + EstimatedValue : List<Estimated>? <<get>> <<set>>
+}
+@enduml

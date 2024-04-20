@@ -1,0 +1,13 @@
+@startuml
+class BranchService {
+    + BranchService(branchDbSettings:IOptions<DatabaseSettings>)
+    + <<async>> GetAllAsync() : Task<List<Branch>>
+    + <<async>> GetAsync(id:string) : Task<Branch?>
+    + <<async>> CreateAsync(newBranch:Branch) : Task
+    + <<async>> UpdateAsync(id:string, updatedBranch:Branch) : Task
+    + <<async>> RemoveAsync(id:string) : Task
+}
+class "IMongoCollection`1"<T> {
+}
+BranchService --> "_branchCollection<Branch>" "IMongoCollection`1"
+@enduml

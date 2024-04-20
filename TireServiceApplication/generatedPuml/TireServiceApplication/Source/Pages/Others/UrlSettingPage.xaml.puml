@@ -1,0 +1,7 @@
+@startuml
+class UrlSettingPage <<partial>> {
+    + UrlSettingPage()
+    - <<async>> Button_OnClicked(sender:object?, e:EventArgs) : void
+}
+ContentPage <|-- UrlSettingPage
+@enduml

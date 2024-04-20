@@ -1,0 +1,6 @@
+@startuml
+class Authentication {
+    + Login : string <<get>> <<set>>
+    + Password : string <<get>> <<set>>
+}
+@enduml

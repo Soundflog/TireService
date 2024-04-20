@@ -1,0 +1,10 @@
+@startuml
+class ApiClient <<static>> {
+    - {static} <<async>> Request(url:string, method:HttpMethod, data:object?) : Task<Response>
+    + {static} <<async>> Get(url:string) : Task<Response>
+    + {static} <<async>> Post(url:string, data:object?) : Task<Response>
+    + {static} <<async>> Put(url:string, data:object) : Task<Response>
+    + {static} <<async>> Delete(url:string) : Task<Response>
+}
+ApiClient o-> "Client" HttpClient
+@enduml

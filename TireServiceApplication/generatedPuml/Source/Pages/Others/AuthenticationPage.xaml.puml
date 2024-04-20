@@ -1,0 +1,10 @@
+@startuml
+class AuthenticationPage <<partial>> {
+    + AuthenticationPage()
+    # <<override>> <<async>> OnAppearing() : void
+    # <<override>> OnBackButtonPressed() : bool
+    - <<async>> AuthenticationButtonOnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> ChangeUrlButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+ContentPage <|-- AuthenticationPage
+@enduml

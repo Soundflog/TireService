@@ -1,0 +1,14 @@
+@startuml
+class DatabaseSettings {
+    + ConnectionString : string <<get>> <<set>>
+    + DatabaseName : string <<get>> <<set>>
+    + OrderCollectionName : string <<get>> <<set>>
+    + ServiceCollectionName : string <<get>> <<set>>
+    + BranchCollectionName : string <<get>> <<set>>
+    + WorkerCollectionName : string <<get>> <<set>>
+    + EquipmentCollectionName : string <<get>> <<set>>
+    + AuthenticationCollectionName : string <<get>> <<set>>
+    + ManagerCollectionName : string <<get>> <<set>>
+    + UserCollectionName : string <<get>> <<set>>
+}
+@enduml

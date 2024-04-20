@@ -1,0 +1,7 @@
+@startuml
+class Program {
+    # <<override>> CreateMauiApp() : MauiApp
+    {static} - Main(args:string[]) : void
+}
+MauiApplication <|-- Program
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class Role {
+    + Name : string <<get>> <<set>>
+    + Key : string <<get>> <<set>>
+}
+@enduml

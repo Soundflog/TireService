@@ -1,0 +1,14 @@
+@startuml
+class SettingUserPage <<partial>> {
+    + SettingUserPage(user:User)
+    - <<async>> InitializePicker() : void
+    - <<async>> SettingButton_OnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> DeleteButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+class "List`1"<T> {
+}
+ContentPage <|-- SettingUserPage
+SettingUserPage --> "_user" User
+SettingUserPage o-> "_roles<Role>" "List`1"
+SettingUserPage o-> "_branches<Branch>" "List`1"
+@enduml

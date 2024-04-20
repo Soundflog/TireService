@@ -1,0 +1,17 @@
+@startuml
+class UserService {
+    + UserService(usersDatabaseSettings:IOptions<DatabaseSettings>)
+    + <<async>> GetAllAsync() : Task<List<User>>
+    + <<async>> GetAllAdmins() : Task<List<User>>
+    + <<async>> GetAllBring() : Task<List<User>>
+    + <<async>> GetByLoginPassword(login:string, password:string) : Task<User>
+    + <<async>> GetByLogin(login:string) : Task<User>
+    + <<async>> GetOneByBranch(id:string, idBranch:string) : Task<User?>
+    + <<async>> GetAsync(id:string) : Task<User?>
+    + <<async>> CreateAsync(newUser:User) : Task
+    + <<async>> UpdateAsync(id:string, updatedUser:User) : Task
+}
+class "IMongoCollection`1"<T> {
+}
+UserService --> "_usersCollection<User>" "IMongoCollection`1"
+@enduml

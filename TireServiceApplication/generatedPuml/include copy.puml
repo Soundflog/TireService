@@ -1,0 +1,31 @@
+@startuml
+!include .\\TireServiceApplication\Source\Data\ApiClient.puml
+!include .\\TireServiceApplication\Source\Data\AuthenticationData.puml
+!include .\\TireServiceApplication\Source\Data\BranchData.puml
+!include .\\TireServiceApplication\Source\Data\EquipmentData.puml
+!include .\\TireServiceApplication\Source\Data\OrderData.puml
+!include .\\TireServiceApplication\Source\Data\Response.puml
+!include .\\TireServiceApplication\Source\Data\ServiceData.puml
+!include .\\TireServiceApplication\Source\Data\Storage.puml
+!include .\\TireServiceApplication\Source\Data\UserData.puml
+!include .\\TireServiceApplication\Source\Data\WorkerData.puml
+!include .\\TireServiceApplication\Source\Entities\Authentication.puml
+!include .\\TireServiceApplication\Source\Entities\Branch.puml
+!include .\\TireServiceApplication\Source\Entities\Equipment.puml
+!include .\\TireServiceApplication\Source\Entities\Estimated.puml
+!include .\\TireServiceApplication\Source\Entities\Order.puml
+!include .\\TireServiceApplication\Source\Entities\OrderStatus.puml
+!include .\\TireServiceApplication\Source\Entities\Role.puml
+!include .\\TireServiceApplication\Source\Entities\Service.puml
+!include .\\TireServiceApplication\Source\Entities\User.puml
+!include .\\TireServiceApplication\Source\Entities\UserToken.puml
+!include .\\TireServiceApplication\Source\Entities\Worker.puml
+!include .\\TireServiceApplication\Source\Models\AuthenticationModel.puml
+!include .\\TireServiceApplication\Source\Models\BranchModel.puml
+!include .\\TireServiceApplication\Source\Models\EquipmentModel.puml
+!include .\\TireServiceApplication\Source\Models\OrderModel.puml
+!include .\\TireServiceApplication\Source\Models\OrderStatusModel.puml
+!include .\\TireServiceApplication\Source\Models\ServiceModel.puml
+!include .\\TireServiceApplication\Source\Models\UserModel.puml
+!include .\\TireServiceApplication\Source\Models\WorkerModel.puml
+@enduml

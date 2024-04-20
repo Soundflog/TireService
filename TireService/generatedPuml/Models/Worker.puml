@@ -1,0 +1,13 @@
+@startuml
+class Worker {
+    + Id : string? <<get>> <<set>>
+    + Deleted : bool? <<get>> <<set>>
+    + FirstName : string? <<get>> <<set>>
+    + LastName : string? <<get>> <<set>>
+    + MidName : string? <<get>> <<set>>
+    + DateOfBirthday : DateTime? <<get>> <<set>>
+    + NumberPhone : string? <<get>> <<set>>
+    + BranchId : Branch? <<get>> <<set>>
+    + PayPerHour : double? <<get>> <<set>>
+}
+@enduml

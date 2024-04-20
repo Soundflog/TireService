@@ -1,0 +1,8 @@
+@startuml
+class AddBranchPage <<partial>> {
+    + AddBranchPage()
+    - <<async>> AddNewItemButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+ContentPage <|-- AddBranchPage
+AddBranchPage --> "_branch" Branch
+@enduml

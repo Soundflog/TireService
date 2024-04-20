@@ -1,0 +1,35 @@
+@startuml
+!include .\\DatabaseSettings.puml
+!include .\\EmailConfig.puml
+!include .\\Program.puml
+!include .\\Controllers\AuthenticationController.puml
+!include .\\Controllers\BranchController.puml
+!include .\\Controllers\EquipmentController.puml
+!include .\\Controllers\OrderController.puml
+!include .\\Controllers\ServiceController.puml
+!include .\\Controllers\UserController.puml
+!include .\\Controllers\WorkerController.puml
+!include .\\Models\Authentication.puml
+!include .\\Models\Branch.puml
+!include .\\Models\Equipment.puml
+!include .\\Models\Estimated.puml
+!include .\\Models\Order.puml
+!include .\\Models\Service.puml
+!include .\\Models\User.puml
+!include .\\Models\Worker.puml
+!include .\\Services\BranchService.puml
+!include .\\Services\EquipmentService.puml
+!include .\\Services\OrderService.puml
+!include .\\Services\ServiceService.puml
+!include .\\Services\UserService.puml
+!include .\\Services\WorkerService.puml
+!include .\\xlsOrders\ReportOrder.puml
+!include .\\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net6.0\TireService.AssemblyInfo.puml
+!include .\\obj\Debug\net6.0\TireService.GlobalUsings.g.puml
+!include .\\obj\Debug\net6.0\TireService.MvcApplicationPartsAssemblyInfo.puml
+!include .\\obj\Release\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
+!include .\\obj\Release\net6.0\TireService.AssemblyInfo.puml
+!include .\\obj\Release\net6.0\TireService.GlobalUsings.g.puml
+!include .\\obj\Release\net6.0\TireService.MvcApplicationPartsAssemblyInfo.puml
+@enduml

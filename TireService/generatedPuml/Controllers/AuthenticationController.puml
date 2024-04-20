@@ -1,0 +1,10 @@
+@startuml
+class AuthenticationController {
+    + AuthenticationController(userService:UserService)
+    + <<async>> Login(login:string, password:string) : Task<IActionResult>
+    - <<async>> GetIdentity(login:string, password:string) : Task<ClaimsIdentity?>
+    - GetAdminIdentity(newAdmin:User) : OkObjectResult
+}
+ControllerBase <|-- AuthenticationController
+AuthenticationController --> "_userService" UserService
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+class WorkerController {
+    + WorkerController(workerService:WorkerService, branchService:BranchService, userService:UserService)
+    + <<async>> GetAll() : Task<List<Worker>>
+    + <<async>> GetByBranch() : Task<List<Worker>?>
+    + <<async>> Post(newWorker:Worker) : Task<IActionResult>
+    + <<async>> Update(updatedWorker:Worker) : Task<IActionResult>
+    + <<async>> Delete(id:string) : Task<IActionResult>
+}
+ControllerBase <|-- WorkerController
+WorkerController --> "_workerService" WorkerService
+WorkerController --> "_branchService" BranchService
+WorkerController --> "_userService" UserService
+@enduml

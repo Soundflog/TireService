@@ -1,0 +1,11 @@
+@startuml
+class BranchController {
+    + BranchController(branchService:BranchService)
+    + <<async>> GetAll() : Task<List<Branch>>
+    + <<async>> Post(newBranch:Branch) : Task<IActionResult>
+    + <<async>> Update(updatedBranch:Branch) : Task<IActionResult>
+    + <<async>> Delete(id:string) : Task<IActionResult>
+}
+ControllerBase <|-- BranchController
+BranchController --> "_branchService" BranchService
+@enduml

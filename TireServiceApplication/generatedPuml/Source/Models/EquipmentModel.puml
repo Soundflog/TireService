@@ -1,0 +1,11 @@
+@startuml
+class EquipmentModel {
+    + {static} <<async>> GetEquipments() : Task<List<Equipment>?>
+    + {static} <<async>> AddEquipment(equipment:Equipment) : Task<bool>
+    + {static} <<async>> UpdateEquipment(equipment:Equipment) : Task<bool>
+    + {static} <<async>> DeleteEquipment(equipment:Equipment) : Task<bool>
+}
+class "List`1"<T> {
+}
+EquipmentModel o-> "_equipments<Equipment>" "List`1"
+@enduml

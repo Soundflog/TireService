@@ -1,0 +1,14 @@
+@startuml
+class WorkerService {
+    + WorkerService(workerDbSettings:IOptions<DatabaseSettings>)
+    + <<async>> GetAllAsync() : Task<List<Worker>>
+    + <<async>> GetByBranch(idBranch:string) : Task<List<Worker>?>
+    + <<async>> GetAsync(id:string) : Task<Worker>
+    + <<async>> CreateAsync(newWorker:Worker) : Task
+    + <<async>> UpdateAsync(id:string, updatedWorker:Worker) : Task
+    + <<async>> RemoveAsync(id:string) : Task
+}
+class "IMongoCollection`1"<T> {
+}
+WorkerService --> "_workerCollection<Worker>" "IMongoCollection`1"
+@enduml

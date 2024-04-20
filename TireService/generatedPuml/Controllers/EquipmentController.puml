@@ -1,0 +1,15 @@
+@startuml
+class EquipmentController {
+    + EquipmentController(equipmentService:EquipmentService, branchService:BranchService, userService:UserService)
+    + <<async>> GetAll() : Task<List<Equipment>>
+    + <<async>> GetAllByBranch() : Task<List<Equipment>?>
+    - {static} Calculate(equipment:Equipment, similarEquip:Equipment?) : Equipment
+    + <<async>> Post(newEquipment:Equipment) : Task<IActionResult>
+    + <<async>> Update(updatedEquipment:Equipment) : Task<IActionResult>
+    + <<async>> Delete(id:string) : Task<IActionResult>
+}
+ControllerBase <|-- EquipmentController
+EquipmentController --> "_equipmentService" EquipmentService
+EquipmentController --> "_branchService" BranchService
+EquipmentController --> "_userService" UserService
+@enduml

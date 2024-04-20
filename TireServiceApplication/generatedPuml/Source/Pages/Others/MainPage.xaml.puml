@@ -1,0 +1,15 @@
+@startuml
+class MainPage <<partial>> {
+    + MainPage()
+    - InitializeTabBar() : void
+    - AddTab(contentPage:ContentPage, title:string) : Tab
+    # <<override>> OnAppearing() : void
+    - <<async>> CheckAuthentication() : void
+}
+Shell <|-- MainPage
+MainPage --> "_workersTab" Tab
+MainPage --> "_ordersTab" Tab
+MainPage --> "_equipmentTab" Tab
+MainPage --> "_servicesTab" Tab
+MainPage --> "_settingsTab" Tab
+@enduml

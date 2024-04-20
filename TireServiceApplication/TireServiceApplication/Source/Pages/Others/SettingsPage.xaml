@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TireServiceApplication.Source.Pages.Others.SettingsPage"
+             Title="Настройки">
+             <ScrollView VerticalScrollBarVisibility="Never">
+    <StackLayout HorizontalOptions="Fill" VerticalOptions="Center" Spacing="10" Margin="10">
+        <Button x:Name="LogOutButton"
+                Text="Выйти из аккаунта"
+                FontSize="16"
+                HeightRequest="45"
+                HorizontalOptions="FillAndExpand"
+                Clicked="LogOutButton_OnClicked"/>
+        
+        <Button Text="Оборудование"
+                FontSize="16"
+                HeightRequest="45"
+                HorizontalOptions="FillAndExpand"
+                Clicked="EquipmentsButton_OnClicked"/>
+        
+        <Button x:Name="BranchesButton"
+                Text="Настройка филиалов" 
+                FontSize="16"
+                HeightRequest="45"
+                HorizontalOptions="FillAndExpand"
+                Clicked="BranchesButton_OnClicked"/>
+        
+        <Button x:Name="ManagersButton"
+                Text="Настройка менеджеров" 
+                FontSize="16"
+                HeightRequest="45"
+                HorizontalOptions="FillAndExpand"
+                Clicked="ManagersButton_OnClicked"/>
+        
+        <Button x:Name="ReportsButton"
+                Text="Отчеты по филиалам"
+                FontSize="16"
+                HeightRequest="45"
+                HorizontalOptions="FillAndExpand"
+                Clicked="ReportsButton_OnClicked"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

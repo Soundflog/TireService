@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TireServiceApplication.Source.Pages.Clients.AddClientPage"
+             Title="Добавить клиента">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <StackLayout x:Name="StackLayout" Margin="10" Spacing="10">
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Имя: " FontSize="18" VerticalOptions="Center"/>
+                <Entry Text="{Binding FirstName}" Placeholder="Введите имя" FontSize="18" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Фамилия: " FontSize="18" VerticalOptions="Center"/>
+                <Entry Text="{Binding LastName}" Placeholder="Введите фамилию" FontSize="18" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Отчество: " FontSize="18" VerticalOptions="Center"/>
+                <Entry Text="{Binding MidName}" Placeholder="Введите отчество" FontSize="18" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Номер телефона: " FontSize="18" VerticalOptions="Center"/>
+                <Entry Keyboard="Telephone" Text="{Binding NumberPhone}"
+                       Placeholder="Телефон"
+                       FontSize="18"
+                       VerticalOptions="Center"
+                       MaxLength="12"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Машины:"
+                       FontSize="18"
+                       VerticalOptions="Center"
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <ListView x:Name="EntryListView" ItemsSource="{Binding Cars}" HasUnevenRows="True" SelectionMode="None" VerticalScrollBarVisibility="Never">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Row="0" Grid.Column="0" Text="Гос. номер: " FontSize="18" VerticalOptions="Center"/>
+                                    <Entry Grid.Row="0" Grid.Column="1" Text="{Binding CarNumber}" Placeholder="Введите гос. номер" FontSize="18" VerticalOptions="Center"/>
+
+                                    <Label Grid.Row="1" Grid.Column="0" Text="Бренд: " FontSize="18" VerticalOptions="Center"/>
+                                    <Entry Grid.Row="1" Grid.Column="1" Text="{Binding CarBrand}" Placeholder="Введите бренд" FontSize="18" VerticalOptions="Center"/>
+
+                                    <Label Grid.Row="2" Grid.Column="0" Text="Модель: " FontSize="18" VerticalOptions="Center"/>
+                                    <Entry Grid.Row="2" Grid.Column="1" Text="{Binding CarModel}" Placeholder="Введите модель" FontSize="18" VerticalOptions="Center"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Добавить машину "
+                        Clicked="AddNewCarButton_OnClicked"
+                        FontSize="16"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center"
+                        HeightRequest="45"/>
+            </StackLayout>
+
+            <Button Text="Добавить"
+                    Clicked="AddNewItemButton_OnClicked"
+                    HorizontalOptions="FillAndExpand" 
+                    FontSize="16" 
+                    HeightRequest="45"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

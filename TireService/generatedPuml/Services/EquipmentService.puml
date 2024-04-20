@@ -1,0 +1,14 @@
+@startuml
+class EquipmentService {
+    + EquipmentService(equipmentDbSettings:IOptions<DatabaseSettings>)
+    + <<async>> GetAllAsync() : Task<List<Equipment>>
+    + <<async>> GetByBranch(idBranch:string) : Task<List<Equipment>>
+    + <<async>> GetAsync(id:string) : Task<Equipment>
+    + <<async>> CreateAsync(newEquipment:Equipment) : Task
+    + <<async>> UpdateAsync(id:string, updatedEquipment:Equipment) : Task
+    + <<async>> RemoveAsync(id:string) : Task
+}
+class "IMongoCollection`1"<T> {
+}
+EquipmentService --> "_equipmentCollection<Equipment>" "IMongoCollection`1"
+@enduml

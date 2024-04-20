@@ -1,0 +1,9 @@
+@startuml
+class SettingWorkerPage <<partial>> {
+    + SettingWorkerPage(worker:Worker)
+    - <<async>> SettingButton_OnClicked(sender:object, e:EventArgs) : void
+    - <<async>> DeleteButton_OnClicked(sender:object, e:EventArgs) : void
+}
+ContentPage <|-- SettingWorkerPage
+SettingWorkerPage --> "_worker" Worker
+@enduml

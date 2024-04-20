@@ -1,0 +1,7 @@
+@startuml
+class Estimated {
+    + Month : DateTime? <<get>> <<set>>
+    + EstimatedCost : double? <<get>> <<set>>
+    + Amortization : double? <<get>> <<set>>
+}
+@enduml

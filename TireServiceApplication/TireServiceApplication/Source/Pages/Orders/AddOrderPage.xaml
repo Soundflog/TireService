@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TireServiceApplication.Source.Pages.Orders.AddOrderPage"
+             Title="Добавление заказа">
+    
+    <ScrollView VerticalScrollBarVisibility="Never">
+    <StackLayout x:Name="StackLayout" Margin="10,10,10,20" Spacing="10">
+        
+        <StackLayout Orientation="Horizontal" HeightRequest="45" HorizontalOptions="Center" >
+            <Label x:Name="CostLabel" Text="Стоимость: 0 руб" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+        </StackLayout>
+            
+        <StackLayout Orientation="Horizontal" HeightRequest="45">
+            <Label Text="Дата заказа: " FontSize="18"  VerticalOptions="Center"/>
+            <DatePicker x:Name="DatePicker" Date="{Binding StartDate}" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" HeightRequest="45">
+            <Label Text="Время заказа: " FontSize="18"  VerticalOptions="Center"/>
+            <TimePicker x:Name="TimePicker" Time="{Binding StartDate}" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="StackLayoutClientPicker" Orientation="Horizontal" HeightRequest="45"> </StackLayout>
+        
+        <Button Text="Добавить клиента"
+                Clicked="AddNewClientButton_OnClicked"
+                HorizontalOptions="FillAndExpand" 
+                FontSize="16" 
+                HeightRequest="45"/>
+        
+        <StackLayout x:Name="StackLayoutWorkerPicker" Orientation="Horizontal" HeightRequest="45"></StackLayout>
+        
+        <StackLayout x:Name="StackLayoutServicePicker"> </StackLayout>
+        
+        <Button Text="Добавить"
+                Clicked="AddNewItemButton_OnClicked"
+                HorizontalOptions="FillAndExpand" 
+                FontSize="16" 
+                HeightRequest="45"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

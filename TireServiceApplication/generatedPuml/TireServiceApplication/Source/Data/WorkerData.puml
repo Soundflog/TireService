@@ -1,0 +1,10 @@
+@startuml
+class WorkerData {
+    - <<const>> GetAllWorkersUrl : string = "getAllByBranch"
+    - <<const>> WorkersUrl : string = "Worker"
+    + {static} <<async>> GetWorkers() : Task<List<Worker>?>
+    + {static} <<async>> AddWorker(worker:Worker) : Task<Worker?>
+    + {static} <<async>> UpdateWorker(worker:Worker) : Task<Worker?>
+    + {static} <<async>> DeleteWorker(id:string) : Task<bool>
+}
+@enduml

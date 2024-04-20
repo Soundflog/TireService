@@ -1,0 +1,6 @@
+@startuml
+class AuthenticationModel <<static>> {
+    + {static} <<async>> Authentication(login:string, password:string) : Task<string>
+    + {static} <<async>> CheckToken() : Task<bool>
+}
+@enduml

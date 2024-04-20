@@ -1,0 +1,8 @@
+@startuml
+class AddWorkerPage <<partial>> {
+    + AddWorkerPage()
+    - <<async>> AddNewItemButton_OnClicked(sender:object, e:EventArgs) : void
+}
+ContentPage <|-- AddWorkerPage
+AddWorkerPage --> "_worker" Worker
+@enduml

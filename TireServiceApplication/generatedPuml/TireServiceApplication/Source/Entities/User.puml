@@ -1,0 +1,11 @@
+@startuml
+class User {
+    + Id : string? <<get>> <<set>>
+    + Deleted : bool? <<get>> <<set>>
+    + Login : string? <<get>> <<set>>
+    + Password : string? <<get>> <<set>>
+    + Role : string? <<get>> <<set>>
+    + BranchId : Branch? <<get>> <<set>>
+    + RoleView : string? <<get>> <<set>>
+}
+@enduml

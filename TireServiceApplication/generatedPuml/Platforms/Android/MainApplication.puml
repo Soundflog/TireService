@@ -1,0 +1,7 @@
+@startuml
+class MainApplication {
+    + MainApplication(handle:IntPtr, ownership:JniHandleOwnership)
+    # <<override>> CreateMauiApp() : MauiApp
+}
+MauiApplication <|-- MainApplication
+@enduml

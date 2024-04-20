@@ -1,0 +1,15 @@
+@startuml
+class ReportOrder {
+    + Address : string <<get>> <<set>>
+    + CountAll : int <<get>> <<set>>
+    + CountSuccesses : int <<get>> <<set>>
+    + CountUnsuccesses : int <<get>> <<set>>
+    + CostUnsuccesses : double <<get>> <<set>>
+    + CostSuccesses : double <<get>> <<set>>
+    + Amortization : double <<get>> <<set>>
+    + Payroll : double <<get>> <<set>>
+    + BonusPayroll : double <<get>> <<set>>
+    + Profit : double <<get>> <<set>>
+}
+ReportOrder --> "WorkerId" Worker
+@enduml

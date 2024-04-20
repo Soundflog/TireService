@@ -1,0 +1,5 @@
+@startuml
+class MauiProgram <<static>> {
+    + {static} CreateMauiApp() : MauiApp
+}
+@enduml

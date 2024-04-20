@@ -1,0 +1,10 @@
+@startuml
+class EquipmentData {
+    - <<const>> GetAllEquipmentUrl : string = "getAllByBranch"
+    - <<const>> EquipmentUrl : string = "Equipment"
+    + {static} <<async>> GetEquipment() : Task<List<Equipment>?>
+    + {static} <<async>> AddEquipment(equipment:Equipment) : Task<Equipment?>
+    + {static} <<async>> UpdateEquipment(equipment:Equipment) : Task<Equipment?>
+    + {static} <<async>> DeleteEquipment(id:string) : Task<bool>
+}
+@enduml

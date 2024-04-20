@@ -1,0 +1,9 @@
+@startuml
+class BranchData {
+    - <<const>> BranchesUrl : string = "Branch"
+    + {static} <<async>> GetBranches() : Task<List<Branch>?>
+    + {static} <<async>> AddBranch(branch:Branch) : Task<Branch?>
+    + {static} <<async>> UpdateBranch(branch:Branch) : Task<Branch?>
+    + {static} <<async>> DeleteBranch(id:string) : Task<bool>
+}
+@enduml

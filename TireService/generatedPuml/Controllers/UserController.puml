@@ -1,0 +1,15 @@
+@startuml
+class UserController {
+    + UserController(service:UserService, branchService:BranchService)
+    + <<async>> GetAll() : Task<List<User>>
+    + <<async>> GetBrings() : Task<List<User>>
+    + <<async>> GetMe() : Task<User?>
+    + <<async>> GetOneByBranch(id:string) : Task<User?>
+    + <<async>> Post(newUser:User) : Task<IActionResult>
+    + <<async>> Update(updatedUser:User) : Task<IActionResult>
+    + <<async>> Delete(id:string) : Task<IActionResult>
+}
+ControllerBase <|-- UserController
+UserController --> "_userService" UserService
+UserController --> "_branchService" BranchService
+@enduml

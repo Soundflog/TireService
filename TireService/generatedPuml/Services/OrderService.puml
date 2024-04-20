@@ -1,0 +1,19 @@
+@startuml
+class OrderService {
+    + OrderService(orderDbSettings:IOptions<DatabaseSettings>)
+    + <<async>> GetAllAsync() : Task<List<Order>>
+    + <<async>> GetByBranch(idBranch:string) : Task<List<Order>>
+    + <<async>> GetByBranchInProcessOrPlan(idBranch:string) : Task<List<Order>>
+    + <<async>> GetPastByBranch(idBranch:string) : Task<List<Order>>
+    + <<async>> GetByBranchStatus(idBranch:string, status:string) : Task<List<Order>>
+    + <<async>> GetAllByDateBranch(idBranch:string, startDate:DateTime, endDate:DateTime) : Task<List<Order>>
+    + <<async>> GetAllByDate(startDate:DateTime, endDate:DateTime) : Task<List<Order>>
+    + <<async>> GetAsync(id:string) : Task<Order?>
+    + <<async>> CreateAsync(newOrder:Order) : Task
+    + <<async>> UpdateAsync(id:string, updatedOrder:Order) : Task
+    + <<async>> RemoveAsync(id:string) : Task
+}
+class "IMongoCollection`1"<T> {
+}
+OrderService --> "_orderCollection<Order>" "IMongoCollection`1"
+@enduml

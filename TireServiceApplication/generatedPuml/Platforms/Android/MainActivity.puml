@@ -1,0 +1,5 @@
+@startuml
+class MainActivity {
+}
+MauiAppCompatActivity <|-- MainActivity
+@enduml

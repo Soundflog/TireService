@@ -1,0 +1,10 @@
+@startuml
+class Program <<static>> {
+    - {static} <<extern>> XamlCheckProcessRequirements() : void
+    {static} - Main(args:string[]) : void
+}
+class App <<partial>> {
+    - _contentLoaded : bool
+    + InitializeComponent() : void
+}
+@enduml

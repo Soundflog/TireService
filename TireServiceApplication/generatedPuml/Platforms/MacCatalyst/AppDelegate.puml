@@ -1,0 +1,6 @@
+@startuml
+class AppDelegate {
+    # <<override>> CreateMauiApp() : MauiApp
+}
+MauiUIApplicationDelegate <|-- AppDelegate
+@enduml

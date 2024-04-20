@@ -1,0 +1,12 @@
+@startuml
+class ServiceModel {
+    + {static} <<async>> GetServices() : Task<List<Service>?>
+    + {static} <<async>> AddService(service:Service) : Task<bool>
+    + {static} <<async>> UpdateService(service:Service) : Task<bool>
+    + {static} <<async>> DeleteService(service:Service) : Task<bool>
+    + {static} TextForListView(services:List<Service>) : void
+}
+class "List`1"<T> {
+}
+ServiceModel o-> "_services<Service>" "List`1"
+@enduml

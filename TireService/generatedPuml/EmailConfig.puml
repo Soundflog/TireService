@@ -1,0 +1,7 @@
+@startuml
+class EmailConfig {
+    + Address : string <<get>> <<set>>
+    + Password : string <<get>> <<set>>
+    + Username : string <<get>> <<set>>
+}
+@enduml

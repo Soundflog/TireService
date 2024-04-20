@@ -1,0 +1,16 @@
+@startuml
+class Order {
+    + Id : string? <<get>> <<set>>
+    + Deleted : bool? <<get>> <<set>>
+    + Cost : double? <<get>> <<set>>
+    + Status : string? <<get>> <<set>>
+    + StartDate : DateTime? <<get>> <<set>>
+    + EndDate : DateTime? <<get>> <<set>>
+    + WorkerId : Worker? <<get>> <<set>>
+    + ServiceId : Service?[]? <<get>> <<set>>
+    + TitleView : string? <<get>> <<set>>
+    + CostView : string? <<get>> <<set>>
+    + StatusView : string? <<get>> <<set>>
+    + StatusColorView : Color? <<get>> <<set>>
+}
+@enduml

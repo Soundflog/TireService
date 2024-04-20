@@ -1,0 +1,9 @@
+@startuml
+class SettingBranchPage <<partial>> {
+    + SettingBranchPage(branch:Branch)
+    - <<async>> SettingButton_OnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> DeleteButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+ContentPage <|-- SettingBranchPage
+SettingBranchPage --> "_branch" Branch
+@enduml

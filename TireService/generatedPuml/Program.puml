@@ -1,0 +1,8 @@
+@startuml
+class "Configure`1"<T> {
+}
+class "AddSingleton`1"<T> {
+}
+class "AddScoped`1"<T> {
+}
+@enduml

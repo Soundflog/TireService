@@ -1,0 +1,31 @@
+@startuml
+class OrderController {
+    + OrderController(orderService:OrderService, serviceService:ServiceService, workerService:WorkerService, userService:UserService, email:IOptions<EmailConfig>)
+    + <<async>> GetAll() : Task<List<Order>>
+    + <<async>> GetAllByBranch() : Task<List<Order>>
+    + <<async>> GetStatusByBranch() : Task<List<Order>>
+    + <<async>> GetPast() : Task<List<Order>>
+    + <<async>> GetStatus(status:string) : Task<List<Order>>
+    + <<async>> ChangeStatus(id:string, status:string) : Task<IActionResult>
+    + <<async>> Post(newOrder:Order) : Task<IActionResult>
+    + <<async>> ReportAllOrders(email:string, startDate:DateTime, endDate:DateTime) : Task<IActionResult>
+    + <<async>> ReportOrder(email:string, startDate:DateTime, endDate:DateTime) : Task<IActionResult>
+    + <<async>> ReportPersonal(email:string, startDate:DateTime, endDate:DateTime) : Task<IActionResult>
+    + <<async>> ReportAllPersonal(email:string, startDate:DateTime, endDate:DateTime) : Task<IActionResult>
+    - <<async>> SendOnEmail(textBody:string, path:string, toAddress:string, username:string) : Task<bool>
+    - <<async>> BuildWorkbookAllPersonal(startDate:DateTime, endDate:DateTime, filename:string) : Task<bool>
+    - <<async>> BuildWorkbookPersonal(username:string, startDate:DateTime, endDate:DateTime, filename:string) : Task<bool>
+    - <<async>> BuildWorkbookOrder(username:string, startDate:DateTime, endDate:DateTime, filename:string) : Task<bool>
+    - <<async>> BuildWorkbookAllOrders(startDate:DateTime, endDate:DateTime, filename:string) : Task<bool>
+    + <<async>> Update(updatedOrder:Order) : Task<IActionResult>
+    + <<async>> Delete(id:string) : Task<IActionResult>
+}
+class "IOptions`1"<T> {
+}
+ControllerBase <|-- OrderController
+OrderController --> "_orderService" OrderService
+OrderController --> "_serviceService" ServiceService
+OrderController --> "_workerService" WorkerService
+OrderController --> "_userService" UserService
+OrderController --> "_email<EmailConfig>" "IOptions`1"
+@enduml

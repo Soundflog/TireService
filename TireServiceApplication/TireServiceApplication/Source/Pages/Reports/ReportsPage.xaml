@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TireServiceApplication.Source.Pages.Reports.ReportsPage"
+             Title="Отчеты">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <StackLayout Margin="10,10,10,20" Spacing="10">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Начало периода: " FontSize="18" VerticalOptions="Center" />
+                <DatePicker x:Name="DatePickerStart" FontSize="18" VerticalOptions="Center" />
+            </StackLayout>
+        
+            <StackLayout Orientation="Horizontal">    
+                <Label Text="Конец периода: " FontSize="18" VerticalOptions="Center" />
+                <DatePicker x:Name="DatePickerEnd" FontSize="18" VerticalOptions="Center" />
+            </StackLayout>
+        
+            <StackLayout Orientation="Horizontal">    
+                <Label Text="Email: " FontSize="18" VerticalOptions="Center" />
+                <Entry x:Name="EmailEntry" Text="vvefddswzq@gmail.com" FontSize="18" VerticalOptions="Center"  Placeholder="Введите почту"/>
+            </StackLayout>
+        
+            <Button Text="Отчет по оказанным услугам"
+                    FontSize="16"
+                    HeightRequest="45"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OrdersReportButton_OnClicked"/>
+        
+            <Button Text="Отчет по работе персонала"
+                    FontSize="16"
+                    HeightRequest="45"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="PersonalReportButton_OnClicked"/>
+        
+            <Button Text="Отчет по оказанным услугам (все филиалы)"
+                    FontSize="16"
+                    HeightRequest="45"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OrdersReportAllBranchButton_OnClicked"/>
+        
+            <Button Text="Отчет по работе персонала (все филиалы)"
+                    FontSize="16"
+                    HeightRequest="45"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="PersonalReportAllBranchButton_OnClicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

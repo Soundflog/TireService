@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TireServiceApplication.Source.Pages.Services.SettingServicePage"
+             Title="Изменение услуги">
+    <ScrollView VerticalScrollBarVisibility="Never">
+    <StackLayout x:Name="StackLayout" Margin="10" Spacing="10">
+        <Button x:Name="DeleteButton"
+                Text="Удалить"
+                FontSize="16"
+                HeightRequest="45"
+                HorizontalOptions="EndAndExpand"
+                BackgroundColor="#f02a2a"
+                Clicked="DeleteButton_OnClicked"/>
+        
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Название: " FontSize="18" VerticalOptions="Center"/>
+            <Entry Text="{Binding Title}" Placeholder="Введите название услуги" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+            
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Цена: " FontSize="18" VerticalOptions="Center"/>
+            <Entry Text="{Binding Cost}" Keyboard="Numeric" Placeholder="Введите стоимость" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+            
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Длительность: " FontSize="18" VerticalOptions="Center"/>
+            <Entry Text="{Binding DurationInMinutes}" Keyboard="Numeric" Placeholder="Введите минуты" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        
+        <StackLayout x:Name="StackLayoutPicker"></StackLayout>
+        
+        <Button Text="Изменить"
+                FontSize="16"
+                HeightRequest="45"
+                HorizontalOptions="FillAndExpand"
+                Clicked="SettingButton_OnClicked"/>
+        
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

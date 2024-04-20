@@ -1,0 +1,17 @@
+@startuml
+class AddServicePage <<partial>> {
+    + AddServicePage()
+    - <<async>> GetEquipmentDataPicker() : void
+    - AddNewPicker() : Picker
+    - DisplayPicker() : void
+    - UpdatePicker() : void
+    - <<async>> AddNewItemButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+class "List`1"<T> {
+}
+ContentPage <|-- AddServicePage
+AddServicePage --> "_service" Service
+AddServicePage o-> "_equipmentEmpty" Equipment
+AddServicePage --> "_equipments<Equipment>" "List`1"
+AddServicePage o-> "_pickerFields<Picker>" "List`1"
+@enduml

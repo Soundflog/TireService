@@ -1,0 +1,10 @@
+@startuml
+class ReportsPage <<partial>> {
+    + ReportsPage()
+    - <<async>> PersonalReportButton_OnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> OrdersReportButton_OnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> OrdersReportAllBranchButton_OnClicked(sender:object, e:EventArgs) : void
+    - <<async>> PersonalReportAllBranchButton_OnClicked(sender:object, e:EventArgs) : void
+}
+ContentPage <|-- ReportsPage
+@enduml

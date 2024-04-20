@@ -1,0 +1,9 @@
+@startuml
+class SettingEquipmentPage <<partial>> {
+    + SettingEquipmentPage(equipment:Equipment)
+    - <<async>> SettingButton_OnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> DeleteButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+ContentPage <|-- SettingEquipmentPage
+SettingEquipmentPage --> "_equipment" Equipment
+@enduml

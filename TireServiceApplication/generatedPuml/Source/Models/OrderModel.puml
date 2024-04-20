@@ -1,0 +1,18 @@
+@startuml
+class OrderModel {
+    + {static} <<async>> GetOrders() : Task<List<Order>?>
+    + {static} <<async>> GetOrdersByStatus(status:OrderStatus) : Task<List<Order>?>
+    + {static} <<async>> AddOrder(order:Order) : Task<bool>
+    + {static} <<async>> UpdateOrder(order:Order) : Task<bool>
+    + {static} <<async>> DeleteOrder(order:Order) : Task<bool>
+    - {static} ObjectForListView(orders:List<Order>) : void
+    + {static} <<async>> ChangeStatus(order:Order, status:string) : Task<bool>
+    + {static} <<async>> GetReportOrder(email:string, startDate:DateTime, endDate:DateTime) : Task<Response>
+    + {static} <<async>> GetReportPersonal(email:string, startDate:DateTime, endDate:DateTime) : Task<Response>
+    + {static} <<async>> GetAllReportOrder(email:string, startDate:DateTime, endDate:DateTime) : Task<Response>
+    + {static} <<async>> GetAllReportPersonal(email:string, startDate:DateTime, endDate:DateTime) : Task<Response>
+}
+class "List`1"<T> {
+}
+OrderModel o-> "_orders<Order>" "List`1"
+@enduml

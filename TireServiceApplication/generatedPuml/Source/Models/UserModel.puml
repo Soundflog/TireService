@@ -1,0 +1,13 @@
+@startuml
+class UserModel {
+    + {static} <<async>> GetUsers() : Task<List<User>?>
+    + {static} <<async>> AddUser(user:User) : Task<bool>
+    + {static} <<async>> UpdateUser(user:User) : Task<bool>
+    + {static} <<async>> DeleteUser(user:User) : Task<bool>
+    + {static} <<async>> GetUser(id:string) : Task<User?>
+    + {static} TextForListView(users:List<User>) : void
+}
+class "List`1"<T> {
+}
+UserModel o-> "_users<User>" "List`1"
+@enduml

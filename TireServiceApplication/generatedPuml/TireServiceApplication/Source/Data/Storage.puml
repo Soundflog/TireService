@@ -1,0 +1,20 @@
+@startuml
+class Storage <<static>> {
+    - <<const>> TokenKey : string = "user_token"
+    - <<const>> IdKey : string = "user_id"
+    - <<const>> RoleKey : string = "user_role"
+    - <<const>> UrlKey : string = "url_linq"
+    + {static} SaveToken(token:string) : void
+    + {static} GetToken() : string
+    + {static} RemoveToken() : void
+    + {static} SaveRole(role:string) : void
+    + {static} GetRole() : string
+    + {static} RemoveRole() : void
+    + {static} SaveId(id:string) : void
+    + {static} GetId() : string
+    + {static} RemoveId() : void
+    + {static} SaveUrl(url:string) : void
+    + {static} GetUrl() : string
+    + {static} RemoveUrl() : void
+}
+@enduml

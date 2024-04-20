@@ -1,0 +1,11 @@
+@startuml
+class SettingsPage <<partial>> {
+    + SettingsPage()
+    # <<override>> OnAppearing() : void
+    - LogOutButton_OnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> BranchesButton_OnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> ManagersButton_OnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> ReportsButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+ContentPage <|-- SettingsPage
+@enduml

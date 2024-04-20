@@ -1,0 +1,8 @@
+@startuml
+class App <<partial>> {
+    + App()
+    + {static} SetMainPage() : void
+    + {static} SetAuthenticationPage() : void
+}
+Application <|-- App
+@enduml

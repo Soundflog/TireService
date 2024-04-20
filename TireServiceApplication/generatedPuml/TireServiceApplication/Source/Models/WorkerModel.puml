@@ -1,0 +1,12 @@
+@startuml
+class WorkerModel {
+    + {static} <<async>> GetWorkers() : Task<List<Worker>?>
+    + {static} <<async>> AddWorker(worker:Worker) : Task<bool>
+    + {static} <<async>> UpdateWorker(worker:Worker) : Task<bool>
+    + {static} <<async>> DeleteWorker(worker:Worker) : Task<bool>
+    + {static} TextForListView(workers:List<Worker>) : void
+}
+class "List`1"<T> {
+}
+WorkerModel o-> "_workers<Worker>" "List`1"
+@enduml

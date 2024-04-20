@@ -1,0 +1,11 @@
+@startuml
+class Service {
+    + Id : string? <<get>> <<set>>
+    + Deleted : bool? <<get>> <<set>>
+    + Title : string? <<get>> <<set>>
+    + Cost : double? <<get>> <<set>>
+    + DurationInMinutes : int? <<get>> <<set>>
+    + BranchId : Branch? <<get>> <<set>>
+    + EquipmentId : Equipment?[]? <<get>> <<set>>
+}
+@enduml

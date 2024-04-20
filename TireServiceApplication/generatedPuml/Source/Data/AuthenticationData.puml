@@ -1,0 +1,6 @@
+@startuml
+class AuthenticationData <<static>> {
+    - <<const>> AuthenticationUrl : string = "Authentication"
+    + {static} <<async>> Authentication(login:string, password:string) : Task<Response>
+}
+@enduml

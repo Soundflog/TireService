@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TireServiceApplication.Source.Pages.Equipments.AddEquipmentPage"
+             Title="Добавление оборудования">
+             <ScrollView VerticalScrollBarVisibility="Never">
+    <StackLayout x:Name="StackLayout" Margin="10" Spacing="10">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Название: " FontSize="18" VerticalOptions="Center"/>
+            <Entry Text="{Binding Title}" Placeholder="Введите название" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Стоимость: " FontSize="18" VerticalOptions="Center"/>
+            <Entry Text="{Binding Cost}" Keyboard="Numeric" Placeholder="Введите стоимость" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Покупка: " FontSize="18" VerticalOptions="Center"/>
+            <DatePicker Date="{Binding PurchaseDate}" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Сборка: " FontSize="18" VerticalOptions="Center"/>
+            <DatePicker Date="{Binding BuildDate}" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Окончания гарантии: " FontSize="18" VerticalOptions="Center"/>
+            <DatePicker Date="{Binding GuaranteeDate}" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Срок службы в годах: " FontSize="18" VerticalOptions="Center"/>
+            <Entry Text="{Binding UsefulLifeDate}" Keyboard="Numeric" Placeholder="Введите число" FontSize="18" VerticalOptions="Center"/>    
+        </StackLayout>
+        <Button Text="Добавить"
+                Clicked="AddNewItemButton_OnClicked"
+                HorizontalOptions="FillAndExpand" 
+                FontSize="16" 
+                HeightRequest="45"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

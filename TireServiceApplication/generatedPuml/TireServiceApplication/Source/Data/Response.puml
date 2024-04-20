@@ -1,0 +1,7 @@
+@startuml
+class Response {
+    + Content : string <<get>>
+    + Response(statusCode:HttpStatusCode, body:string)
+}
+Response --> "StatusCode" HttpStatusCode
+@enduml

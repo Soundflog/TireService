@@ -1,0 +1,7 @@
+@startuml
+class OrderStatus {
+    + Title : string <<get>> <<set>>
+    + Key : string <<get>> <<set>>
+}
+OrderStatus --> "Color" Color
+@enduml

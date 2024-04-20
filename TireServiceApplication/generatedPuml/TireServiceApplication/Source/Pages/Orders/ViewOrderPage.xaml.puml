@@ -1,0 +1,14 @@
+@startuml
+class ViewOrderPage <<partial>> {
+    + ViewOrderPage(order:Order)
+    - Init() : void
+    - InitStatusPicker() : void
+    - <<async>> DeleteButton_OnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> UpdateStatus() : void
+}
+class "List`1"<T> {
+}
+ContentPage <|-- ViewOrderPage
+ViewOrderPage --> "_order" Order
+ViewOrderPage --> "_statusList<OrderStatus>" "List`1"
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class Branch {
+    + Id : string? <<get>> <<set>>
+    + Adress : string? <<get>> <<set>>
+    + Deleted : bool? <<get>> <<set>>
+}
+@enduml

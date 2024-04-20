@@ -1,0 +1,11 @@
+@startuml
+class OrdersPage <<partial>> {
+    + OrdersPage()
+    # <<override>> OnAppearing() : void
+    - InitializePicker() : void
+    - <<async>> RefreshData() : void
+    - <<async>> ListView_OnItemSelected(sender:object?, e:SelectedItemChangedEventArgs) : void
+    - <<async>> AddButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+ContentPage <|-- OrdersPage
+@enduml

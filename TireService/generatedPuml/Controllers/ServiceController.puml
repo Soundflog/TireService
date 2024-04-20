@@ -1,0 +1,15 @@
+@startuml
+class ServiceController {
+    + ServiceController(serviceService:ServiceService, branchService:BranchService, equipmentService:EquipmentService, userService:UserService)
+    + <<async>> GetAllWithEquipment() : Task<List<Service>>
+    + <<async>> GetAllByBranch() : Task<List<Service>?>
+    + <<async>> Post(newService:Service) : Task<IActionResult>
+    + <<async>> Update(updatedService:Service) : Task<IActionResult>
+    + <<async>> Delete(id:string) : Task<IActionResult>
+}
+ControllerBase <|-- ServiceController
+ServiceController --> "_serviceService" ServiceService
+ServiceController --> "_branchService" BranchService
+ServiceController --> "_equipmentService" EquipmentService
+ServiceController --> "_userService" UserService
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+class UserData {
+    - <<const>> GetUserUrl : string = "getAllExists"
+    - <<const>> GetOneByBranchUrl : string = "getOneByBranch"
+    - <<const>> GetYourselfUrl : string = "getYourself"
+    - <<const>> UserUrl : string = "User"
+    + {static} <<async>> GetUsers() : Task<List<User>?>
+    + {static} <<async>> AddUser(user:User) : Task<User?>
+    + {static} <<async>> UpdateUser(user:User) : Task<User?>
+    + {static} <<async>> DeleteUser(id:string) : Task<bool>
+    + {static} <<async>> GetUser() : Task<User?>
+    + {static} <<async>> GetUserById(id:string) : Task<User?>
+}
+@enduml

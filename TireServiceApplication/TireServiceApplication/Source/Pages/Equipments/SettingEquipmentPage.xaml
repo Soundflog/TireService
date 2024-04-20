@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TireServiceApplication.Source.Pages.Equipments.SettingEquipmentPage"
+             Title="Изменение оборудования">
+             <ScrollView VerticalScrollBarVisibility="Never">
+    <StackLayout x:Name="StackLayout" Margin="10" Spacing="10">
+        <Button x:Name="DeleteButton"
+                Text="Удалить"
+                FontSize="16"
+                HeightRequest="45"
+                HorizontalOptions="EndAndExpand"
+                BackgroundColor="#f02a2a"
+                Clicked="DeleteButton_OnClicked"/>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Название: " FontSize="18" VerticalOptions="Center"/>
+            <Entry Text="{Binding Title}" Placeholder="Введите название" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Стоимость: " FontSize="18" VerticalOptions="Center"/>
+            <Entry Text="{Binding Cost}" Keyboard="Numeric" Placeholder="Введите стоимость" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Дата покупки: " FontSize="18" VerticalOptions="Center"/>
+            <DatePicker Date="{Binding PurchaseDate}" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Дата сборки: " FontSize="18" VerticalOptions="Center"/>
+            <DatePicker Date="{Binding BuildDate}" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Дата окончания гарантии: " FontSize="18" VerticalOptions="Center"/>
+            <DatePicker Date="{Binding GuaranteeDate}" FontSize="18" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Срок службы в годах: " FontSize="18" VerticalOptions="Center"/>
+            <Entry Text="{Binding UsefulLifeDate}" Keyboard="Numeric" Placeholder="Введите число" FontSize="18" VerticalOptions="Center"/>    
+        </StackLayout>
+        <Button Text="Изменить"
+                FontSize="16"
+                HeightRequest="45"
+                HorizontalOptions="FillAndExpand"
+                Clicked="SettingButton_OnClicked"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

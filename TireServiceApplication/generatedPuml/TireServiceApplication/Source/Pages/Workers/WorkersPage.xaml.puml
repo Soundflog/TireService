@@ -1,0 +1,10 @@
+@startuml
+class WorkersPage <<partial>> {
+    + WorkersPage()
+    # <<override>> OnAppearing() : void
+    - <<async>> RefreshData() : void
+    - <<async>> AddButton_OnClicked(sender:object, e:EventArgs) : void
+    - <<async>> ListView_OnItemSelected(sender:object, e:SelectedItemChangedEventArgs) : void
+}
+ContentPage <|-- WorkersPage
+@enduml

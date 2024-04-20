@@ -1,0 +1,13 @@
+@startuml
+class AddUserPage <<partial>> {
+    + AddUserPage()
+    - <<async>> InitializePicker() : void
+    - <<async>> AddNewItemButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+class "List`1"<T> {
+}
+ContentPage <|-- AddUserPage
+AddUserPage --> "_user" User
+AddUserPage o-> "_roles<Role>" "List`1"
+AddUserPage o-> "_branches<Branch>" "List`1"
+@enduml

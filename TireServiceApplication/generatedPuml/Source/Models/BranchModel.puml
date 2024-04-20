@@ -1,0 +1,12 @@
+@startuml
+class BranchModel <<static>> {
+    + {static} <<async>> GetBranches() : Task<List<Branch>?>
+    + {static} <<async>> AddBranch(branch:Branch) : Task<bool>
+    + {static} <<async>> UpdateBranch(branch:Branch) : Task<bool>
+    + {static} <<async>> DeleteBranch(branch:Branch) : Task<bool>
+    + {static} TextForListView(branches:List<Branch>) : void
+}
+class "List`1"<T> {
+}
+BranchModel o-> "_branches<Branch>" "List`1"
+@enduml

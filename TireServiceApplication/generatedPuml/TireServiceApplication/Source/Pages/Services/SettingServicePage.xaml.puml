@@ -1,0 +1,20 @@
+@startuml
+class SettingServicePage <<partial>> {
+    + SettingServicePage(service:Service)
+    # <<override>> OnAppearing() : void
+    - <<async>> GetEquipmentData(initializePicker:Action) : void
+    - InitializePicker() : void
+    - AddNewPicker() : Picker
+    - DisplayPicker() : void
+    - UpdatePicker() : void
+    - <<async>> SettingButton_OnClicked(sender:object?, e:EventArgs) : void
+    - <<async>> DeleteButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+class "List`1"<T> {
+}
+ContentPage <|-- SettingServicePage
+SettingServicePage --> "_service" Service
+SettingServicePage o-> "_equipmentEmpty" Equipment
+SettingServicePage --> "_equipments<Equipment>" "List`1"
+SettingServicePage o-> "_pickerFields<Picker>" "List`1"
+@enduml

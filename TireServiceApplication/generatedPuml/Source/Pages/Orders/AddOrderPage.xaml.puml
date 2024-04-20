@@ -1,0 +1,24 @@
+@startuml
+class AddOrderPage <<partial>> {
+    + AddOrderPage()
+    - <<async>> InitializePage() : void
+    - <<async>> GetServiceDataPicker() : Task
+    - <<async>> GetWorkerDataPicker() : Task
+    - AddNewServicePicker() : Picker
+    - AddNewWorkerPicker() : Picker
+    - UpdateServicePicker() : void
+    - DisplayServicePicker() : void
+    - DisplayWorkerPicker() : void
+    - <<async>> AddNewItemButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+class "List`1"<T> {
+}
+ContentPage <|-- AddOrderPage
+AddOrderPage --> "_order" Order
+AddOrderPage o-> "_services<Service>" "List`1"
+AddOrderPage o-> "_workers<Worker>" "List`1"
+AddOrderPage o-> "_serviceEmpty" Service
+AddOrderPage o-> "_workerEmpty" Worker
+AddOrderPage o-> "_pickerServiceFields<Picker>" "List`1"
+AddOrderPage o-> "_pickerWorkerField" Picker
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+class AddEquipmentPage <<partial>> {
+    + AddEquipmentPage()
+    - <<async>> AddNewItemButton_OnClicked(sender:object?, e:EventArgs) : void
+}
+ContentPage <|-- AddEquipmentPage
+AddEquipmentPage --> "_equipment" Equipment
+@enduml
